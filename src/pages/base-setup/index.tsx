@@ -21,7 +21,7 @@ const BaseSetup: React.FC = () => {
   }, []);
 
   return (
-    <Main meta={<Meta />}>
+    <Main meta={<Meta />} isBottomMargin>
       <section className="l-container l-max-width" ref={divRef}>
         {" "}
         {/* Assign ref here */}

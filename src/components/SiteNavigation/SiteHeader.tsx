@@ -19,16 +19,17 @@ import { baseLinks } from "@/data/navigation";
 // import logoLockup from "@/assets/images/wsv-logo.png";
 
 type SiteHeaderProps = {
-  isSignedIn?: boolean;
-  isAdmin?: boolean;
+  isBottomMargin?: boolean;
 };
 
-const SiteHeader: React.FC<SiteHeaderProps> = () => {
+const SiteHeader: React.FC<SiteHeaderProps> = ({ isBottomMargin = false }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const router = useRouter();
 
   return (
-    <header className="relative z-50 w-full bg-white shadow-md mb-10 lg:mb-20">
+    <header
+      className={`relative z-50 w-full bg-white shadow-md ${isBottomMargin ? "mb-10 lg:mb-10`" : "mb-0"}`}
+    >
       <nav className="l-container l-max-width">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-x-4 lg:flex-1">

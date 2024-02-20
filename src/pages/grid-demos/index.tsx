@@ -7,7 +7,7 @@ import { Meta } from "@/layouts/Meta";
 
 const GridDemos: React.FC = () => {
   return (
-    <Main meta={<Meta />}>
+    <Main meta={<Meta />} isBottomMargin>
       <section className="l-container l-max-width">
         <div className="l-grid">
           <div className="l-grid__col l-grid__col--demo col-span-1">1</div>

@@ -10,7 +10,7 @@ import { Meta } from "@/layouts/Meta";
 const HomePage: React.FC = () => {
   const { basePath } = useRouter();
   return (
-    <Main meta={<Meta />}>
+    <Main meta={<Meta />} isBottomMargin>
       <section className="l-container l-max-width flex relative items-center justify-center h-[calc(100vh-14rem)] lg:h-[calc(100vh-19rem)]">
         <div className="l-grid relative z-20">
           <div className="hidden lg:block lg:col-span-2" />
