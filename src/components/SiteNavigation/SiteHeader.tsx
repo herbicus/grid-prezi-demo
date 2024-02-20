@@ -28,15 +28,16 @@ const SiteHeader: React.FC<SiteHeaderProps> = () => {
   const router = useRouter();
 
   return (
-    <header className="w-full bg-white shadow-md mb-10">
-      <nav className="l-section l-max-width">
+    <header className="relative z-50 w-full bg-white shadow-md mb-10 lg:mb-20">
+      <nav className="l-container l-max-width">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-x-4 lg:flex-1">
             <Link
               href="/"
               className="-m-2.5 inline-flex items-center justify-center gap-x-4 rounded-md p-2.5 text-slate-900 hover:text-slate-700"
             >
-              <svg
+              <span className="text-xl font-medium">Grid Demo</span>
+              {/* <svg
                 version="1.1"
                 id="folio-logo-full"
                 width="371.067"
@@ -131,7 +132,7 @@ const SiteHeader: React.FC<SiteHeaderProps> = () => {
                 ></path>
               </svg>
 
-              <span className="sr-only">Herb Torres</span>
+              <span className="sr-only">Herb Torres</span> */}
             </Link>
           </div>
 
@@ -159,7 +160,7 @@ const SiteHeader: React.FC<SiteHeaderProps> = () => {
           <ul className="block space-y-8">
             {baseLinks.map((item) => (
               <li
-                className="font-regular text-lg uppercase text-neutral-900"
+                className="font-regular text-lg text-neutral-900"
                 key={item.name}
                 onClick={() => setIsNavOpen(false)}
               >

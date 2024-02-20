@@ -22,7 +22,7 @@ const BaseSetup: React.FC = () => {
 
   return (
     <Main meta={<Meta />}>
-      <section className="l-section l-max-width" ref={divRef}>
+      <section className="l-container l-max-width" ref={divRef}>
         {" "}
         {/* Assign ref here */}
         <span className="block text-center bg-indigo-200">
@@ -39,20 +39,20 @@ const BaseSetup: React.FC = () => {
         </span>
       </section>
 
-      <section className="l-section l-max-width">
+      <section className="l-container l-max-width">
         <div className="l-grid">
-          <div className="l-grid__col l-grid__col--1">1</div>
-          <div className="l-grid__col l-grid__col--1">2</div>
-          <div className="l-grid__col l-grid__col--1">3</div>
-          <div className="l-grid__col l-grid__col--1">4</div>
-          <div className="l-grid__col l-grid__col--1">5</div>
-          <div className="l-grid__col l-grid__col--1">6</div>
-          <div className="l-grid__col l-grid__col--1">7</div>
-          <div className="l-grid__col l-grid__col--1">8</div>
-          <div className="l-grid__col l-grid__col--1">9</div>
-          <div className="l-grid__col l-grid__col--1">10</div>
-          <div className="l-grid__col l-grid__col--1">11</div>
-          <div className="l-grid__col l-grid__col--1">12</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">1</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">2</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">3</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">4</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">5</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">6</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">7</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">8</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">9</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">10</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">11</div>
+          <div className="l-grid__col l-grid__col--demo l-grid__col--1">12</div>
         </div>
       </section>
     </Main>
