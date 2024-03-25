@@ -12,13 +12,13 @@ const YtPlayer = dynamic(() => import("react-player/youtube"), {
 import { Main } from "@/templates/Main";
 import { Meta } from "@/layouts/Meta";
 
-const Demo: React.FC = () => {
+const DemoFixedHeight: React.FC = () => {
   const { basePath } = useRouter();
   return (
     <Main meta={<Meta />}>
-      <section className="aspect-w-16 aspect-h-9 overflow-hidden">
+      <section className="w-full max-w-full h-[500px] relative overflow-hidden">
         <div className="l-container l-max-width h-full flex flex-col items-start justify-end z-20 pb-10 lg:pb-20">
-          <h1 className="text-3xl lg:text-6xl font-bold text-white">
+          <h1 className="text-3xl lg:text-6xl font-bold text-white relative z-20">
             Lorem Ipusm
           </h1>
         </div>
@@ -140,4 +140,4 @@ const Demo: React.FC = () => {
   );
 };
 
-export default Demo;
+export default DemoFixedHeight;

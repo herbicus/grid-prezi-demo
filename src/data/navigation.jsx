@@ -17,6 +17,7 @@ export const baseLinks = [
   { name: "Base Setup", href: "/base-setup", icon: faGear },
   { name: "Grid Demos", href: "/grid-demos", icon: faTableCells },
   { name: "Demo", href: "/demo", icon: faDesktop },
+  { name: "Demo - Fixed Height", href: "/fixed-height", icon: faDesktop },
 ];
 
 export const socialLinks = [
